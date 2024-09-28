@@ -5,3 +5,17 @@ Accept: application/json
 
 ###
 GET {{PlatformService_HostAddress}}/api/platforms
+
+###
+GET {{PlatformService_HostAddress}}/api/platforms/1
+
+###
+POST {{PlatformService_HostAddress}}/api/platforms/
+Content-Type: application/json
+
+{
+  "name": "JS",
+  "publisher": "Aaryan Baral",
+  "cost": "Free"
+}
+

@@ -25,7 +25,7 @@ namespace PlatformService.Data
 
         public bool SaveChanges()
         {
-            throw new NotImplementedException();
+            return (_context.SaveChanges() >= 0);
         }
     }
 }
