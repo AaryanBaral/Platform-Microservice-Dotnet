@@ -31,10 +31,6 @@ app.MapControllers();
 app.UseHttpsRedirection();
 app.PrepPopulation();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
 
 
 
