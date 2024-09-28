@@ -13,9 +13,11 @@ builder.Services.AddScoped<IPlatfromRepo,PlatformRepo>();
 builder.Services.AddDbContext<AppDbContext>(opt=>
 opt.UseInMemoryDatabase("InMem"));
 
-
+// Adding AutoMapper to map betwenn dtos and model
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

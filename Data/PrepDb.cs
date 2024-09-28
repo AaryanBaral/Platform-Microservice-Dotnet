@@ -7,7 +7,8 @@ public static class PrepDb
 {
     public static void PrepPopulation(this IApplicationBuilder app)
     {
-        /* This is used to create a scope of application services 
+        /* This is used to access and create a scope  of application services 
+        from the IApplicationbuilder app which is in Program.cs 
         where all the services are listed using Dependency Injection */
         using var scopeService = app.ApplicationServices.CreateScope();
 
